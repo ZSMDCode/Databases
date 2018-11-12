@@ -1,0 +1,54 @@
+1.
+  1. String
+  2. Integer
+  3. Date
+  4. Float
+  5. Small Money
+2.
+  Databases should be used when we need a way to store data that makes it easy to search for specific data, can handle multiple apps accessing the data, and persists beyond the end of a particular app process.
+  Text files should be used when we don't need to change the data through multiple apps accessing it
+3.
+  SQL uses a single = symbol for equality instead of ==
+4.
+  The data is organized in a uniform fashion by way of columns and rows. This manner of grouping allows for easy searches and organized results
+5.
+  Table = structure containing data organized in rows and columns
+  Columns = vertical organization of data that defines the data contained
+  Rows = horizontal group of values within a table that contains data from multiple Columns
+  Value = a specific value of a location in the table defined by the intersection of row and column
+6.
+  Integer, String, Float
+7.
+  - I'm looking for the date and amount from the payments table
+  <output will be:>
+  '2016-05-01', 1500.00
+  '2016-05-10', 37.00
+  '2016-05-15', 124.93
+  '2016-05-23', 54.72
+  - I'm looking for the amounts from the payments table where the amount is greater than 500
+  <output will be:>
+  1500.00
+  - I'm looking for all data from the payments table where the payee is 'Mega Foods'
+  <output will be:>
+  '2016-05-15', 'Mega Foods', 124.93, 'Groceries'
+8.
+  -SELECT email, signup
+   FROM users
+   WHERE name = 'DeAndre Data';
+   <output will be:>
+   email                 | signup
+   datad@comcast.net       2008-01-20T00:00:00.000Z
+
+  -SELECT userid
+   FROM users
+   WHERE email = 'aleesia.algorithm@uw.edu';
+   <output will be:>
+   userid
+   1
+
+  -SELECT *
+   FROM users
+   WHERE userid = 4;
+   <output will be:>
+   userid | name           | email             | signup
+   4      | Brandy Boolean | bboolean@nasa.gov | 1999-10-15T00:00:00.000Z
